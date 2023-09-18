@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JS</title>
+    <style>
+        body{
+            background-color: #061b26;
+        }
+        h1 {
+            color:snow;
+            text-shadow:1px #00000030;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+        .container {
+            display:flex;
+            justify-content: center;
+            flex-direction:column;
+            align-items: center;
+            margin:10%;
+            background-color: #6F6F6FF0;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px 10px #05050540;
+        }
+        .container input {
+            width: 45%;
+            background-color: aliceblue;
+            font-size:25px;
+            border:none;
+            text-align: center;
+            align-content: center;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px 1px #05050540;
+        }
+        
+        .choice{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: initial;
+            flex-direction: row;
+        }
+
+        .container button {
+            width: 50%;
+            background-color: darkcyan;
+            color:white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 15px;
+            border: none;
+            margin: 10px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px 2px #00000030;
+        }
+        .container button:hover {
+            background-color: #08707C;
+        }
+
+        #limpiar{
+            background-color: #D00000;
+        }
+        #limpiar:hover{
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora</h1>
+        <input type="text" name="" id="num1" placeholder="Número 1">
+        <br>
+        <input type="text" name="" id="num2" placeholder="Número 2">
+        <br>
+        <input type="text" name="" id="res" placeholder="Resultado">
+        <br>
+        <div class="choice">
+            <button class="choice" onclick="sumar()">Sumar</button>
+            <button class="choice" onclick="restar()">Restar</button>
+            <button class="choice" onclick="multiplicar()">Multiplicar</button>
+            <button class="choice" onclick="dividir()">Dividir</button>
+            <button class="choice" id="limpiar" onclick="limpiar()">Limpiar</button>
+        </div>
+    </div>
+    <script src="./calculadora.js"></script>
+</body>
+</html>
