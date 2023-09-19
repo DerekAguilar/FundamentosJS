@@ -4,10 +4,14 @@ const wrapped = wrapping(gifts);
 console.log(wrapped);
 
 function wrapping(gifts) {
-    const envueltos=[];
+/*    const envueltos=[];
     for(const gift of gifts){
       const tapa='*'.repeat(gift.length+2);
       envueltos.push(`${tapa}\n*${gift}*\n${tapa}`);
     }
-    return envueltos;
+    return envueltos;*/
+    return gifts.map(gift=>{
+      const tapa='*'.repeat(gift.length+2);
+      return `${tapa}\n*${gift}*\n${tapa}`;
+    });
   }  
