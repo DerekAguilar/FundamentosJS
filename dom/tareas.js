@@ -58,7 +58,8 @@ function getButton(e){
                 alertActual.classList.add('alert','alert-success');
                 break;
             default:
-                alertActual.remove();
+                if (confirm('¿Seguro que quieres borrar esta tarea?'))
+                    alertActual.remove();
                 break;
         }
     }
